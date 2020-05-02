@@ -1,0 +1,36 @@
+plugins: [jekyll-paginate]
+
+permalink: /:categories/:title/
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input:  GFM
+  syntax_highlighter: rouge
+
+
+paginate: 10
+paginate_path: "page/:num"
+baseurl: ""
+
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      styles : [highlight.css,gitment.css,post.css]
+      scripts : [post.js]
+
+
+
+title: "Jasonstack IO"
+description: ""
+github:
+  username: jasonstack
+
+url: "https://jasonstack.github.io/"
+imgrepo: "/static/img"
